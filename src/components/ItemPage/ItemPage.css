@@ -1,0 +1,182 @@
+.item-page {
+	display: grid;
+	grid-template-columns: minmax(500px, 75%) 25%;
+	grid-template-rows: auto auto auto;
+	grid-template-areas:
+		'left-top right'
+		'left-bottom right'
+		'. right';
+	padding: 36px;
+	grid-gap: 22px;
+}
+.item {
+	grid-area: left-top;
+}
+.item-used-in-other-lots {
+	grid-area: left-bottom;
+	overflow-x: scroll;
+}
+.item-characteristics {
+	grid-area: right;
+}
+
+.item-div {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	background: #ffffff;
+	border: 0.5px solid #dcdcdc;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+.item-div > div:first-child {
+	display: flex;
+}
+.image-div {
+	width: 255.45px;
+	height: 255.21px;
+	border-radius: 4px;
+	padding: 12px;
+
+	/* Background (image) can be manipulated from inline style */
+	background-image: url(/static/media/tiger.bae21a4e.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.heart-icon {
+	width: 33px;
+	height: 33px;
+	background: #ffffff;
+	border-radius: 5px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	float: right;
+	box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+.item-details {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-left: 20px;
+}
+.item-title {
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 32px;
+	color: #242424;
+}
+.item-left {
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	text-transform: capitalize;
+	color: #34a853;
+}
+.item-price {
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 32px;
+	color: #384047;
+}
+.item-price > span:nth-child(1) {
+	font-weight: 600;
+	opacity: 0.7;
+}
+
+.right-div {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+.right-div > div:first-child {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 170px;
+	height: 45px;
+	background: #00599b;
+	border-radius: 4px;
+}
+.right-div > div:nth-child(2) {
+	height: 105px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+#have-one-to-sell {
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	letter-spacing: 0.01em;
+
+	color: #ffffff;
+}
+#view-listing {
+	background: #ff952c;
+	border-radius: 4px;
+	width: 235px;
+	height: 45px;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 149%;
+	letter-spacing: 0.01em;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#submit-ad {
+	background: #ffffff;
+	border: 1px solid #dddddd;
+	box-sizing: border-box;
+	border-radius: 4px;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 149%;
+	width: 235px;
+	height: 45px;
+	text-align: center;
+	letter-spacing: 0.01em;
+	color: #384047;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.item-used-in-other-lots-container > span {
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 32px;
+	color: #242424;
+}
+.item-used-in-other-lots-container > div {
+	display: flex;
+}
+
+@media only screen and (max-width: 1040px) {
+	.item-page {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, auto);
+		grid-template-areas:
+			'left-top'
+			'right'
+			'left-bottom';
+	}
+}

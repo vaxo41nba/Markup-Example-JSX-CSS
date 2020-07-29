@@ -1,0 +1,145 @@
+#image-div {
+	width: 210px;
+	height: 210px;
+	border-radius: 4px;
+	padding: 12px;
+
+	/* Background (image) can be manipulated from inline style */
+	background-image: url(/static/media/tiger.bae21a4e.jpg);
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 10px;
+}
+.one-item-container {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.one-item-container > span:nth-child(1) {
+	background: blue;
+	position: absolute;
+	width: 500px;
+}
+.one-item-container > span:nth-child(2) {
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 22px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.02em;
+	color: #384047;
+}
+.one-item-container > span:nth-child(3) {
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 25px;
+	line-height: 32px;
+	display: flex;
+	align-items: center;
+	color: #384047;
+}
+.one-item-container > span:nth-child(4) {
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	text-transform: capitalize;
+	color: #34a853;
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+#location {
+	display: flex;
+	align-items: self-end;
+}
+#location > span {
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+	color: #384047;
+	margin-left: 5px;
+}
+#verified {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	margin-bottom: 30px;
+	margin-top: 5px;
+}
+#verified > span {
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: 0.01em;
+	color: #00599b;
+	margin-left: 5px;
+}
+
+#heart-icon {
+	width: 27px;
+	height: 27px;
+	background: #ffffff;
+	border-radius: 5px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	float: right;
+	box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+#buy-now {
+	width: 212px;
+	height: 36px;
+	background: #ff952c;
+	border-radius: 4px;
+	display: flex;
+}
+#buy-now > span {
+	/* Buy now */
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 0.01em;
+	color: #ffffff;
+	align-self: center;
+	width: 263px;
+	display: flex;
+	justify-content: center;
+}
+
+#make-offer {
+	width: 212px;
+	height: 36px;
+	margin-top: 16px;
+	background: #ffffff;
+	border: 1px solid #dddddd;
+	box-sizing: border-box;
+	border-radius: 4px;
+	display: flex;
+}
+#make-offer > span {
+	/* Make offer */
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	letter-spacing: 0.01em;
+	color: #384047;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: center;
+	width: 263px;
+}

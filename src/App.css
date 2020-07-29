@@ -1,0 +1,8 @@
+@import '~react-image-gallery/styles/css/image-gallery.css';
+@import './components/BuyersPage/BuyersPage.css';
+@import './components/Header/Header.css';
+@import './components/ItemPage/ItemPage.css';
+
+* {
+	box-sizing: border-box;
+}

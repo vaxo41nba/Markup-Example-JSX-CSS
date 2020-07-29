@@ -1,0 +1,73 @@
+.header {
+	background: #4433aa;
+	display: grid;
+	grid-template-columns: 250px minmax(30%, auto) 480px 130px;
+	height: 60px;
+	min-width: 1230px;
+	margin-bottom: 20px;
+}
+
+.logo {
+	margin-left: 0px;
+	align-self: center;
+	justify-self: center;
+}
+
+div.MuiInput-root {
+	position: relative;
+	width: 95%;
+	place-self: center;
+	background: white;
+}
+
+.links {
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	color: #ffffff;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.icons {
+	margin-left: 0px;
+	display: flex;
+	align-items: center;
+	justify-self: center;
+	padding-bottom: 5px;
+}
+.icons > img {
+	margin-right: 10px;
+}
+.icons > div {
+	display: flex;
+	padding-bottom: 1px;
+}
+
+@media only screen and (max-width: 1224px) {
+	.header {
+		min-width: 700px;
+		grid-template-columns: minmax(200px, 20%) 1fr 100px;
+		grid-template-rows: 1fr 1fr;
+		height: unset;
+		grid-template-areas:
+			'logo bar bar'
+			'links links icons';
+	}
+
+	.logo {
+		grid-area: logo;
+	}
+	div.MuiInput-root {
+		grid-area: bar;
+	}
+	.links {
+		grid-area: links;
+	}
+	.icons {
+		grid-area: icons;
+	}
+}
